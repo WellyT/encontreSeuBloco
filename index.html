@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,25 +17,36 @@
     <header>
       <div class="content">
         <img src="./assets/feather.svg" alt="coloured feathers" />
-        <div class="information">
-          <p>find your block</p>
-          <h1>Encontre os <span>melhores blocos</span> de carnaval de 2023</h1>
+        <div class="informations">
+          <div class="information">
+            <p>find your block</p>
+            <h1>
+              Encontre os <span>melhores blocos</span> de carnaval de 2023
+            </h1>
+          </div>
+          <form>
+            <div class="form-control">
+              <img src="./assets/search.svg" alt="" />
+              <input
+                type="search"
+                name="searchByName"
+                id="searchByName"
+                placeholder="Pesquise por nome"
+              />
+            </div>
+            <div class="form-control">
+              <img src="./assets/location.svg" alt="" />
+              <input
+                type="search"
+                name="searchByCity"
+                id="searchByCity"
+                placeholder="Selecione uma cidade"
+              />
+            </div>
+
+            <button>Buscar agora</button>
+          </form>
         </div>
-        <form>
-          <input
-            type="search"
-            name="searchByName"
-            id="searchByName"
-            placeholder="Pesquise por nome"
-          />
-          <input
-            type="search"
-            name="searchByCity"
-            id="searchByCity"
-            placeholder="Selecione uma cidade"
-          />
-          <button>Buscar agora</button>
-        </form>
         <img
           src="./assets/dancingLady.svg"
           alt="women dancing dressed with coloured feather"

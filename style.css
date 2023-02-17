@@ -4,6 +4,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto";
 }
 
 :root {
@@ -12,4 +13,83 @@
 
 body {
   font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+header {
+  width: 100%;
+  background: #f8f8ff;
+}
+.content {
+  position: relative;
+  height: 53.2rem;
+}
+.informations {
+  display: grid;
+  place-content: center;
+
+  text-align: center;
+}
+.information p {
+  margin-top: 10rem;
+  color: rgba(228, 88, 88, 1);
+  text-transform: uppercase;
+  line-height: 2.56rem;
+  margin-bottom: 1.8rem;
+}
+.information span {
+  color: rgba(98, 70, 234, 1);
+}
+h1 {
+  width: 64.7rem;
+  font-size: 4.8rem;
+  margin-bottom: 4rem;
+  margin-inline: auto;
+}
+.content > img {
+  position: absolute;
+}
+.content img:last-child {
+  right: 0;
+  bottom: 0;
+}
+/* FORM */
+
+form {
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid rgba(234, 234, 234, 1);
+  display: flex;
+  gap: 2.4rem;
+}
+.form-control {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  width: 34.8rem;
+
+  background-color: rgba(244, 244, 255, 1);
+  padding: 1.2rem 0.8rem;
+  border-radius: 0.5rem;
+}
+input {
+  border: none;
+  background: none;
+  outline: none;
+
+  width: 100%;
+}
+input::placeholder {
+  color: rgba(124, 124, 138, 1);
+}
+button {
+  padding: 1.2rem 3.2rem;
+  background-color: rgba(98, 70, 234, 1);
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
 }
